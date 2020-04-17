@@ -1,47 +1,57 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Password -->
-    <script type="text/javascript">var _ = prompt('Password required') || ''; var __ = _.split('').reduce((a,b) => { a=((a<<5) - a) + b.charCodeAt(0); return a & a }, 0); console.log(!__ === -1774725892); if (!__ || __ !== -1774725892) { document.write('<h1>403 Forbidden</h1>'); window.stop(); }</script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- Password -->
+  <script type="text/javascript">var _ = prompt('Password required') || ''; var __ = _.split('').reduce((a,b) => { a=((a<<5) - a) + b.charCodeAt(0); return a & a }, 0); console.log(!__ === -1774725892); if (!__ || __ !== -1774725892) { document.write('<h1>403 Forbidden</h1>'); window.stop(); }</script>
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <!-- Ionic icons -->
-    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <title>The Dox Company</title>
-  </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
-  <body>
+  <title>The Dox Company</title>
+</head>
+
+<body>
 
   <!-- N A V B A R -->
   <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="icon ion-md-menu"></span>
     </button>
     <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <div class="container">
-      	<img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+        <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
       </div>
     </div>
   </nav>
   <!-- E N D  N A V B A R -->
 
+  <script type="text/javascript">
+    function handleClick() {
+      $('#doxcode').show();
+      $('#doxbtn').text('Click the code below to begin DoxBox upload.').prop('disabled', true);
+    }
+  </script>
+
   <!-- H E R O -->
-  <section id="hero">
+  <section id="hero" style="background-image:linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.9)),url(images/doxbox-tesselated.png); background-repeat: repeat;">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
@@ -51,17 +61,44 @@
           <span>Unlimited Doxing</span>
           <h1>Digital Innovation and the <b>Future of Digital Doxing</b></h1>
           <p>Boost your digital doxing campaigns and increase your conversion rates</p>
-          <a href="https://teamzander-production.herokuapp.com/missions/doxbox?code=testing" class="btn btn-regular">CLICK HERE TO START DOXING</a>
+
+          <button id="doxbtn" class="btn btn-regular w-100" onClick="handleClick()">
+            CLICK HERE TO START DOXING
+          </button>
+
+          <div id="doxcode" class="alert alert-secondary w-100" role="alert" style="display:none;">
+            <a href="https://teamzander-production.herokuapp.com/missions/doxbox?code=testing" target="_NONE">
+              <code>
+                    -----BEGIN PGP MESSAGE-----<br/>
+                    hQEMA2iGIGXpfVLsAQf/UXTEOlGC6EXHoRWlNZHsej9wUcT3M6O6gRpE1usBDRVH<br/>
+                    vXDEVyL7t3MMgA7oioIQtCdvYkmot6JmnAB0tExMr8kDWEe7aqg1G/5sjiQk+K7R<br/>
+                    JrlukziVxgrwljslIofq0mP+TYiLZ6LNdGoW9H7Z1rIA3S1tSX055lkcNssW78+g<br/>
+                    axpuGZgaOPH7al2z9g1927ga0pzFD5hX4S0Nhwsp3eMVrAzAUEvkEbzZk1de+TZG<br/>
+                    aDhjhXK9Xfse7CMPJ+paxXHpBImd8dmAZvnbJ4y6lcMIiM4+8AyKQdBG/MIpRHiI<br/>
+                    W7DvHPd9EhugPxua89VXfE9lMZRMPgvV5tDAo8MRRdI7AZFHrHcFQ4hEOzH7QbNJ<br/>
+                    7aViWTSyX9GGJdCsZ07/eGvw5EW3NWvP7O4EQKA/Kzx0kaFKExSs4oae2kE==HXDT<br/>
+                    -----END PGP MESSAGE-----
+                </code>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
   <!-- E N D  H E R O -->
 
-    <!-- External JavaScripts -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+  <!-- External JavaScripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
